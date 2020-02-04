@@ -1,12 +1,12 @@
 #!/bin/bash
-echo "What's your favorite color? "
-read text1
-echo "What's your friends favorite color? "
-read text2
+echo "What's your name and favorite color? "
+read name1  text1
+echo "What's your friends name and favorite color? "
+read name2 text2
     if test $text1 != $text2; then
-        echo "I guess opposites attract."
+        echo $name "I guess opposites attract."
     else
-        echo "You two do think alike!"
+        echo $name1 "You and" $name2 "do think alike!"
     fi
 exit 0
 

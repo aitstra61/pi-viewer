@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "What's the the weather like today?"
+echo "What's the the weather going to be like tomorrow?"
 read weather
        case $weather in
           sunny | warm ) echo "Nice! I love it when it's" $weather"."
@@ -12,5 +12,3 @@ read weather
           ;;
        esac
 exit 0
-
-
