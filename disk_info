@@ -2,10 +2,10 @@
 # This gets disk space and writes to a temp file
 date >> /tmp/diskspace
 df -h >> /tmp/diskspace
-result=${?}
-if [ ${result} -ne 0 ]
-then
-   echo "Diskspace command failed" | mailx -s "disk_mon fail" vagrant@localhost
-else
-   echo "Diskspace data recorded successfully" | mailx -s "disk_mon success" vagrant@localhost
-fi
+#result=${?}
+#if [ ${result} -ne 0 ]
+#then
+#   echo "Diskspace command failed" | mailx -s "disk_mon fail" vagrant@localhost
+#else
+#   echo "Diskspace data recorded successfully" | mailx -s "disk_mon success" vagrant@localhost
+#fi
